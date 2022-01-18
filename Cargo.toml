@@ -1,0 +1,13 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Brennan Gebotys <gebob19.git@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rust2py"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.7"
+features = ["extension-module"]
